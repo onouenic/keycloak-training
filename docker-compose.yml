@@ -1,0 +1,9 @@
+version: '3'
+services:
+  portal-training-frontend:
+    restart: always
+    container_name: portal-training-frontend
+    build: .
+    environment:
+      - NODE_ENV=production
+    command: npm run start
