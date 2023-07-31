@@ -10,4 +10,6 @@ RUN npm i --verbose
 WORKDIR /app/source
 COPY . .
 
+RUN npm run build:css
+
 RUN npm run build

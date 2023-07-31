@@ -14,6 +14,9 @@ export default function Home() {
         {session && <p>Session: {session.user?.email} || {session.user?.name}</p>}
         <p>Status: {status}</p>
       </div>
+      <div>
+        {status === "authenticated" ? <span>Logado</span> : <span>Deslogado</span>}
+      </div>
     </main>
   )
 }
